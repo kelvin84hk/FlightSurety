@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container">
+
+        <div id="display-wrapper" class="top-20">
+            <h1>Insure your flight time at ease with smart contract</h1>
+        </div>
+        
+        <div class="row top-20">
+            <label class="form">Select a flight:</label>
+            <select id="flight-number">
+                <option value="CX5789" selected="selected">CX5789</option>
+                <option value="UX2368">UX2368</option>
+                <option value="JK9390">JK9390</option>
+                <option value="DA6536">DA6536</option>
+                <option value="QJ5478">QJ5478</option>
+            </select>
+        </div>
+        <div id="price-wrapper" class="row top-20">
+        </div>
+        <div class="row top-20">
+            <label class="form">ETH: (payout ratio 1.5 if delay due to Airline)</label>
+            <input type="text" class="form" id="ether" value="0.5">
+            <btn class="btn btn-primary" id="#" data-action="1">Buy insurance for selected flight</btn>
+        </div>
+        <div class="row top-20">
+            <btn class="btn btn-primary" id="submit-oracle" data-action="0">Check flight status</btn>
+        </div>
+        <div id="result-wrapper" class="row top-20">
+        </div>
+        <div class="row top-20">
+            <btn class="btn btn-primary" id="#" data-action="2">Check account balance</btn>
+        </div>
+        <div id="balance-wrapper" class="row top-20">
+        </div>
+        <div class="row top-20">
+            <btn class="btn btn-primary" id="#" data-action="3">Withdraw account balance</btn>
+        </div>
+        <div id="withdraw-wrapper" class="row top-20">
+        </div>
+    </main>
+
+</body>
+
+</html>
